@@ -1,30 +1,28 @@
 
-# Large Language Models with Semantic Search
-This repository contains the lab work for Coursera course on Large Language Models with Semantic Search.
+# Tmdb Movie Recommendation
+Content Based Recommender System recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie.
 
-Learn to use LLMs to enhance search and summarize results.
+The details of the movies(title, genre, runtime, rating, poster, etc) are fetched using an API by TMDB, https://www.themoviedb.org/documentation/api, and using the IMDB id of the movie in the API.
 
-.Enhance keyword search using Cohere Rerank
+We use web scraping to get the reviews given by the user in the IMDB site using beautifulsoup4 and performed sentiment analysis on those reviews.
 
-.Use embeddings to leverage dense retrieval, a powerful NLP tool
-
-.Evaluate your effectiveness for further optimization
+## Deployement
+1. Data Extraction
+2. Exploratory Data Analysis(EDA)
+3. Feature Engineering
+4. Model Building and Tuning
+5. Building Flask API
+6. Pushing code to Github
+7. Connecting to your Heroku account 
+8. Deploy App
 
 ## Installation
 
-!pip install cohere 
-
-!pip install weaviate-client Annoy
-
-from utils import print_result
-
-from annoy import AnnoyIndex
-import numpy as np
+import streamlit as st
 
 import pandas as pd
 
-import re
-
+import matplotlib.pyplot as plt
 
 
 ## Authors
